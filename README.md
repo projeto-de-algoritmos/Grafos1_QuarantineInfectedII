@@ -1,45 +1,58 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# QuarantineInfectedII
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 1<br>
+**Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0117548  |  [Bruno Carmo Nunes](https://github.com/brunocmo) |
+| 17/0150747  |  [Marcos Vinícius Rodrigues da Conceição](https://github.com/marcos-mv) |
 
-## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+## Video 
+
+//TODO
+
+## Sobre
+Devido a crise atual do COVID-19 foi feito uma simulação que mostra a progressão de infectados de um espaço confinado no CLI(40x40). Sendo que os agentes de saúde tem o trabalho de identificar e colocar em quarentena os infectados.
+Ambos os casos é utilizado o método de busca em largura (BFS) para a identificação e infecção de nós.
+
+//TODO MELHORAR SOBRE
+Adição de GUI, e outras funcionalidades
+
+## Instalação
+**Linguagem**: C++<br>
+
+Feito e usado no kernel: **Linux 5.4.0-45-generic x86_64**
+
+Tenha o *git*, *make*, *cmake*, *qt5* e o compilador *c++* instalado na sua maquina.
+
+Para clonar:
+
+`git clone https://github.com/projeto-de-algoritmos/Grafos1_QuarantineInfectedII.git`
+
+Para compilar o programa:
+
+`cd Grafos1_QuarantineInfectedII/`
+
+`mkdir build && cd build/`
+
+`cmake ..`
+
+`make`
+
+Para executar o programa:
+
+`./QuarantineInfectedII`
+
+## Uso
+
+//TODO
+
+## Outros
+
+//TODO
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
 
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+//TODO
