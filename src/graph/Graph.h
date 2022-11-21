@@ -22,9 +22,9 @@ class Graph
         std::list<int> *adj;
         int getGraphSize();
         void addEdge(int u, int v);
+        void addEdgeOneDirection(int u, int v);
         std::string printEdge(int u, int v);
 
-        void breadthFirstSearch();
         void breadthFirstSearch(int init);
 
         int getV();
