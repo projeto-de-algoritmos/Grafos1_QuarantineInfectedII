@@ -2,6 +2,7 @@
 
 #include "gui/HelloWorld.h"
 #include "graph/Graph.h"
+#include "plane2D/Plane2D.h"
 
 int main(int argc, char *argv[])
 {
@@ -11,6 +12,7 @@ int main(int argc, char *argv[])
 	hello.show();
 
 	Graph g(8);
+    Plane2D plane;
 
 	g.addEdge(1,4);
 	g.addEdge(1,2);
@@ -26,5 +28,13 @@ int main(int argc, char *argv[])
     std::cout << "DFS ---------------------- " << '\n';
 
     g.deepFirstSearch(6);
+
+    for( auto & f : plane.mapXY )
+    {
+        for( auto & e : f )
+            std::cout << e << " ";
+        std::cout << '\n';
+    }
+
 	return QApplication::exec();
 }
