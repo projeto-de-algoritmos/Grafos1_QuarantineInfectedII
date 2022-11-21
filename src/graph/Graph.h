@@ -13,8 +13,6 @@ class Graph
 {
     private:
         int v = MAX_NO;
-        bool *contaminated = new bool[v];
-        bool *blocked = new bool[v];
         bool markedClass[MAX_NO];
     public:
 
