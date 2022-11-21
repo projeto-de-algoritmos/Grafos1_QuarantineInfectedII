@@ -19,7 +19,12 @@ int main(int argc, char *argv[])
 	g.addEdge(4,2);
 	g.addEdge(2,6);
 
+    std::cout << "BFS ---------------------- " << '\n';
+
 	g.breadthFirstSearch(6);
 
+    std::cout << "DFS ---------------------- " << '\n';
+
+    g.deepFirstSearch(6);
 	return QApplication::exec();
 }

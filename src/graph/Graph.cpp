@@ -10,6 +10,7 @@ Graph::Graph(int v)
 {
     this->v = v;
     adj = new std::list<int>[v];
+    std::fill_n(markedClass, MAX_NO, false);
 }
 
 Graph::~Graph() = default;
@@ -40,7 +41,8 @@ void Graph::breadthFirstSearch(int inicial)
     std::queue<int> S;
     bool marked[MAX_NO];
 
-    for(int i = 0; i < v; i++) marked[i] = false;
+    std::fill_n( marked, MAX_NO, false);
+
     S.push(inicial);
     marked[inicial] = true;
 
@@ -59,6 +61,24 @@ void Graph::breadthFirstSearch(int inicial)
             }
         }
     }
+}
+
+void Graph::deepFirstSearch(int init)
+{
+    std::queue<int> S;
+
+
+    markedClass[init] = true;
+
+    for(auto line :  adj[init])
+    {
+        if( !markedClass[line] )
+        {
+            std::cout << printEdge(init, line) << '\n';
+            markedClass[line] = true;
+            deepFirstSearch(line);
+        }
+    } 
 }
 
 int Graph::getV()

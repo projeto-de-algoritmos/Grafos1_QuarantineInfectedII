@@ -4,6 +4,7 @@
 #include <list>
 #include <queue>
 #include <stack>
+#include <algorithm>
 
 constexpr int MAX_NO {1600};
 constexpr int MAX_VALUE { 40 };
@@ -14,6 +15,7 @@ class Graph
         int v = MAX_NO;
         bool *contaminated = new bool[v];
         bool *blocked = new bool[v];
+        bool markedClass[MAX_NO];
     public:
 
         Graph();
@@ -26,6 +28,7 @@ class Graph
         std::string printEdge(int u, int v);
 
         void breadthFirstSearch(int init);
+        void deepFirstSearch(int init);
 
         int getV();
         void setV(int v);
