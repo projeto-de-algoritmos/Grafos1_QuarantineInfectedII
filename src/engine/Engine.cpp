@@ -258,11 +258,9 @@ void Engine::imunidadeDeRebanho(int init)
             {
                 statusGlobal[line] = 192;
                 numberVacinated++;
-                numberInfected--;
             } else if (statusGlobal[line] == -1) {
                 statusGlobal[line] = 1618;
                 numberVacinated++;
-                numberInfected--;
             }
             imunidadeDeRebanho(line);
         }
