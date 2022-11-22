@@ -4,6 +4,7 @@ Graph::Graph()
 {
     v = MAX_NO;
     adj = new std::list<int>[v];
+    std::fill_n(markedClass, MAX_NO, false);
 }
 
 Graph::Graph(int v)

@@ -13,9 +13,8 @@ class Graph
 {
     private:
         int v = MAX_NO;
-        bool markedClass[MAX_NO];
     public:
-
+        bool markedClass[MAX_NO];
         Graph();
         Graph(int v);
         ~Graph();

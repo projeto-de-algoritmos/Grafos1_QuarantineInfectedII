@@ -7,6 +7,7 @@ extern int statusGlobal[MAX_NO];
 extern int numberInfected;
 extern int numberVacinated;
 extern int numberContagion;
+extern int numberDeaths;
 
 class Engine : public Graph, public Plane2D 
 {
@@ -16,14 +17,16 @@ class Engine : public Graph, public Plane2D
     u_int8_t deathPercent;
     u_int8_t curePercent;
 
-
-
     Engine();
     ~Engine();
 
     void createNodesAndVerticesWithMap();
     void generateContagion(int x, int y);
     void rollDeath();
+
+    void vivaSUS( int x, int y );
+    void imunidadeDeRebanho( int init);
+
 
     std::string conversorMapa(int x, int y);
     std::string imprimirPlano();
