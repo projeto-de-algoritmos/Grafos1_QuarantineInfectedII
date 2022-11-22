@@ -1,6 +1,3 @@
-#include <QApplication>
-
-#include "gui/HelloWorld.h"
 #include "graph/Graph.h"
 #include "plane2D/Plane2D.h"
 #include "engine/Engine.h"
