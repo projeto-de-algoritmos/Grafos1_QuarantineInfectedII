@@ -11,7 +11,7 @@
 
 ## Video 
 
-https://youtu.be/jH51Ty3Rafg
+https://www.youtube.com/watch?v=iYhs143VU04
 
 ## Sobre
 Uma melhoria do antigo projeto [QuarantineInfected](https://github.com/projeto-de-algoritmos/Grafos1_QuarantineInfected), sendo que é incluido mais estados de vitalidade e também a adição de busca em profundidade (DFS). 
